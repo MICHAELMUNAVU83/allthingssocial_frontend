@@ -8,7 +8,7 @@ const Brands = () => {
         How does it work for brands?
       </p>
 
-      <div className="md:w-[80%] w-[90%] my-4 mx-auto flex md:flex-row flex-col justify-between ">
+      <div className="md:w-[80%] w-[90%] my-4 mx-auto flex md:flex-row-reverse flex-col justify-between ">
         <div className="flex md:w-[40%] w-[100%]  flex-col gap-4">
           <div className="gap-1 text-2xl font-semibold flex flex-col">
             <div className="gap-2 flex text-[#887CF2] items-center">
@@ -80,7 +80,7 @@ const Brands = () => {
 
       <p className="bg-[#887CF2] h-[1px] md:w-[80%] w-[90%] mx-auto  " />
 
-      <div className="md:w-[80%] w-[90%] my-4 mx-auto flex md:flex-row flex-col justify-between ">
+      <div className="md:w-[80%] w-[90%] my-4 mx-auto flex md:flex-row-reverse flex-col justify-between ">
         <div className="flex md:w-[40%] w-[100%]  flex-col gap-4">
           <div className="gap-1 text-2xl font-semibold flex flex-col">
             <div className="gap-2 flex text-[#887CF2] items-center">
