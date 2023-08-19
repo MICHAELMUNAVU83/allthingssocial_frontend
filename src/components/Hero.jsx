@@ -10,7 +10,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { BsTiktok } from "react-icons/bs";
 const Hero = () => {
   return (
-    <div className="md:h-[100vh] bg-gradient-to-bl from-purple-300 via-purple-100 to-white flex pt-24 flex-col justify-center items-center">
+    <div className=" bg-gradient-to-bl from-purple-300 via-purple-100 to-white flex pt-36 flex-col justify-center items-center">
       <div className="md:w-[80%] w-[95%] mx-auto flex md:flex-row flex-col justify-between ">
         <div className="flex gap-6  text-xl flex-col md:w-[60%]">
           <div className="flex gap-2  text-[#887CF2] items-center">
