@@ -1,21 +1,19 @@
 import { useState } from "react";
 import "./App.css";
-import Hero from "./components/Hero";
-import Brands from "./components/Brands";
-import Influencers from "./components/Influencers";
-import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <Brands />
-      <Influencers />
-      <Pricing />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
     </>
   );
 }

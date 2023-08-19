@@ -31,7 +31,8 @@ const NavBar = () => {
         <a>
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold dancing text-2xl "
+            className="
+             dancing text-2xl "
           >
             AllthingsSocial
           </h1>
