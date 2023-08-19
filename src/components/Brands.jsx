@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { TiArrowSortedUp } from "react-icons/ti";
 const Brands = () => {
   return (
-    <div className="bg-gradient-to-br pt-8  from-white via-purple-100 to-purple-400 ">
+    <div className="bg-gradient-to-br pt-8  from-white via-purple-100 to-purple-300 ">
       <p className="text-[#595959] text-2xl text-center font-bold ">
         How does it work for brands?
       </p>
