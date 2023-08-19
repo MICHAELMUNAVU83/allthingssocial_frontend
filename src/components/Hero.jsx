@@ -10,14 +10,14 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { BsTiktok } from "react-icons/bs";
 const Hero = () => {
   return (
-    <div className="h-[100vh] bg-gradient-to-bl from-purple-400 via-purple-100 to-white flex flex-col justify-center items-center">
-      <div className="w-[80%] mx-auto flex justify-between ">
-        <div className="flex gap-6  text-xl flex-col w-[60%]">
+    <div className="md:h-[100vh] bg-gradient-to-bl from-purple-400 via-purple-100 to-white flex flex-col justify-center items-center">
+      <div className="md:w-[80%] w-[95%] mx-auto flex md:flex-row flex-col justify-between ">
+        <div className="flex gap-6  text-xl flex-col md:w-[60%]">
           <div className="flex gap-2  text-[#887CF2] items-center">
             <BsArrowRight />
             <p>Influencer management tool for brands and agencies</p>
           </div>
-          <p className="text-6xl text-[#595959] font-bold ">
+          <p className="md:text-6xl text-3xl text-[#595959] font-bold ">
             Organize all your influencers and collabs{" "}
             <span className="text-[#887CF2]">easily in one place</span>
           </p>
@@ -27,7 +27,7 @@ const Hero = () => {
             <BsTiktok className="text-2xl" />
           </div>
         </div>
-        <div className="w-[30%] flex flex-col rotate-12 justify-center items-center">
+        <div className="md:w-[30%] my-8 md:my-0 w-[90%] mx-auto flex flex-col md:rotate-12 rotate-6 justify-center items-center">
           <img
             src="/instagram.jpg"
             className="w-[100%] h-[400px] object-cover"
