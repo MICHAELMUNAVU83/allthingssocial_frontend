@@ -5,12 +5,12 @@ const Pricing = () => {
   return (
     <div className="md:h-[100vh] bg-gradient-to-tr py-8 from-purple-300 via-purple-100 to-white ">
       <div className="flex flex-col gap-6">
-        <div className=" text-[#595959] w-[70%] mx-auto text-center text-5xl font-bold items-center ">
+        <div className=" text-[#595959] md:w-[70%] w-[80%] mx-auto text-center md:text-5xl text-3xl font-bold items-center ">
           You will get an influencer CRM , influencer search and analytics{" "}
           <span className="text-[#887CF2]">all in one place</span>
         </div>
 
-        <div className="w-[80%] grid grid-cols-3 gap-4 mx-auto">
+        <div className="md:w-[80%] w-[90%] grid md:grid-cols-3 gap-4 mx-auto">
           <div className="bg-white h-[450px] border-[1px] border-[#887CF2]/50 rounded-md mt-[30px] flex flex-col justify-between ">
             <div className="h-[50px] border-b-2 text-[#887CF2] font-semibold border-[#887CF2] rounded-t-xl flex justify-center  items-center  ">
               AllThingsSocial Expert
@@ -53,7 +53,7 @@ const Pricing = () => {
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-t-xl h-[480px] flex flex-col">
+          <div className="bg-white border-[1px] border-[#887CF2]/50 rounded-md border-t-0 rounded-t-xl h-[480px] flex flex-col">
             <div className="h-[30px] bg-[#887CF2] rounded-t-xl flex justify-center font-semibold items-center text-white ">
               Most Popular
             </div>
