@@ -57,12 +57,7 @@ const Discovery = () => {
         </div>
         <div className="bg-white min-h-[50vh] shadow-md rounded-xl p-4 shadow-gray-300">
           <div className="flex justify-between items-center">
-            <div>
-              <select className="border-2 border-gray-300 rounded-md text-[#808AA2] font-bold  h-[50px] px-8 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                <option value="All">Creation Date </option>
-              </select>
-            </div>
-            <div className="py-5">
+            <div className="py-5 w-[50%]">
               <div class="relative">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg
@@ -83,46 +78,64 @@ const Discovery = () => {
                 </div>
                 <input
                   className="w-full px-4 pl-10     focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  border-gray-300 border-2 rounded-xl h-[50px] "
-                  placeholder="Search Boards"
+                  placeholder="Search For an Influencer by Name"
                 />
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-4 gap-8">
-            <div className="h-[200px] w-[100%] border-2 flex cursor-pointer justify-center group items-center flex-col border-gray-300 border-dashed rounded-xl">
-              <p className="text-white bg-[#ADAAD2] flex justify-center items-center font-bold hover:scale-105 transition-all ease-in-out duration-500 group-hover:bg-[#887CF2]  h-[20px] w-[20px] rounded-full ">
-                +
-              </p>
-              <p className="text-[#595959] group-hover:text-[#887CF2] text-xl ">
-                Create New Board
-              </p>
-            </div>
-
-            <div className="h-[200px] w-[100%] border-2 flex cursor-pointer justify-between pb-4 group  flex-col  rounded-xl">
-              <div className="flex flex-col w-[100%]">
-                <div className="p-2 flex justify-between w-[100%] items-center">
-                  <p className="text-sm font-bold">New Board</p>
-
-                  <p className="text-[#887CF2]">....</p>
-                </div>
-                <p className="bg-[#887CF2] w-[100%] h-[1px]" />
-              </div>
-              <div className="flex flex-col gap-1 p-4">
-                <div className="gap-4 flex  text-[#ADAAD2] font-semibold  items-center">
-                  <FaUserCircle className="text-[#887CF2]" />
-                  <p>No influencers added yet</p>
-                </div>
-                <div className="gap-4 text-[#ADAAD2] font-semibold flex items-center">
-                  <FaUserCircle className="text-[#887CF2]" />
-                  <p>No Chat Message </p>
-                </div>
-                <div className="gap-4 text-[#ADAAD2] font-semibold  flex items-center">
-                  <FaUserCircle className="text-[#887CF2]" />
-                  <p>No Chat Message </p>
-                </div>
-              </div>
+            <div className="w-[20%]">
+              <select className="border-2 border-gray-300 rounded-md w-[100%] text-[#808AA2] font-bold  h-[50px] px-8 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                <option value="All">Filter by NIche </option>
+              </select>
             </div>
           </div>
+          <table class="table-auto w-full text-center  overflow-auto">
+            <thead className="text-[#595959] border-b-[1px] border-t-[1px] border-[#595959]/80 py-2 text-xs text-center font-bold uppercase">
+              <tr>
+                <th className="py-2">Influencer</th>
+                <th className="py-2">Followers</th>
+                <th className="py-2">Post</th>
+              </tr>
+            </thead>
+            <tbody className="">
+              <tr>
+                <td>
+                  <div className="flex justify-center items-center gap-2">
+                    <img
+                      src="/instagram.jpg"
+                      className="w-[30px] object-cover rounded-full h-[30px]"
+                    />
+                    <div className="flex items-start flex-col">
+                      <p>
+                        <span className="font-bold">Instagram</span> - 1.2M
+                      </p>
+                      <p className="text-[#595959] text-xs">Fashion</p>
+                    </div>
+                  </div>
+                </td>
+                <td>5.6 M</td>
+                <td>10</td>
+                <td>
+                  <button className="bg-gradient-to-r cursor-pointer hover:scale-105 transition-all ease-in-out duration-500 from-purple-400 to-pink-600 text-white px-2 py-1 rounded-md">
+                    Save to Board
+                  </button>
+                </td>
+                <td>5.6 M</td>
+                <td>5.6 M</td>
+              </tr>
+              <tr>
+                <td>Witchy Woman</td>
+                <td>The Sliding</td>
+                <td>The Eagles</td>
+                <td>1972</td>
+              </tr>
+              <tr>
+                <td>Shining Star</td>
+                <td>Earth, Wind, and Fire</td>
+                <td>The Sliding</td>
+                <td>1975</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
